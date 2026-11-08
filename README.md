@@ -13,13 +13,7 @@ A small proof-of-concept project. I try to load rectangular packages into one co
 | `container_optimisation_story.ipynb` | The main notebook. It tells the whole story: idea, code, result, what I observed, conclusion, next idea. |
 | `README.md` | This file. |
 | `Report` (separate document) | The detailed written report with all results and explanations. |
-| `results/test_dataset.json` | The test data: three containers with their packages (small, medium, large). |
-| `results/packages_small.csv`, `packages_medium.csv`, `packages_large.csv` | The same packages as simple tables. |
-| `results/all_runs.csv` | Every single run: method, seed, packages packed, volume %, weight %, time, violations. |
-| `results/summary.csv` | The final comparison table (mean and best over runs). |
-| `results/journey_large_set.csv` | One line per version on the large dataset, in the order I tried them. |
-| `results/packing_medium.png`, `results/packing_large.png` | 3D pictures of the final layouts. |
-| `results/comparison_chart.png` | Bar charts: volume %, weight %, violations. |
+
 
 The `results/` folder is created by the notebook when you run it.
 
@@ -68,7 +62,7 @@ Then choose **Kernel > Restart & Run All**.
 | 4 | **QUBO v2**: annealer chooses *which* packages, v2 places them | Small (98 qubits) and valid, but not better than v2 |
 | 5 | **QUBO v2 + density** in the energy | No clear gain |
 | 6 | Final comparison: 3 test sets, 5 seeds, runtime, 3D plots | v2 is as good or better on weight |
-| 7 | Conclusions and next ideas | See the report |
+| 7 | Conclusions | See the report 
 
 ---
 
